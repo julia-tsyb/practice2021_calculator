@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.calc-wrapper {
+    padding: 10px;
+    margin: auto;
+    margin-top: 100px;
+    width: 350px;
+    background-color: rgb(170, 185, 180);
+}
+
+.calc-input__window {
+    width: 100%;
+    text-align: right;
+    font-size: 1.5rem;
+    background-color: rgb(242, 250, 248);
+    border: 1px solid #ddd;
+    border-radius: 1px;
+}
+
+.calc-buttons {
+    margin-top: 10px;
+    height: 250px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.calc-buttons__numbers {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button_number,
+.button_delete {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.button_number:hover,
+.button_delete:hover {
+    background-color: #f1f1f1;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #bbb;
+}
+
+.calc-buttons__operators {
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.button_operator {
+    width: 50px;
+    height: 30%;
+    border: 1px solid #bbb;
+    border-radius: 1px;
+    cursor: pointer;
+    background-color: #ddd;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.button_operator:hover {
+    background-color: #ddd;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #aaa;
+}
+
+.button_operator:last-child {
+    width: 100%;
+}
+
+.button_operator,
+.button_number,
+.button_delete {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+
+/* input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} */
